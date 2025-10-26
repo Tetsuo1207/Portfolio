@@ -208,7 +208,7 @@ function App() {
               </p>
             </div>
             <div className="profile-image">
-              <img src="images/user.png" alt="Profile" className="profile-img dropshadow" />
+              <img src="/images/user.png" alt="Profile" className="profile-img dropshadow" />
             </div>
           </div>
         </section>
@@ -216,7 +216,7 @@ function App() {
           <h2 className="section-title">Certifications</h2>
           <div className="certifications-grid">
             <div className="cert-card" ref={certRefs[0]} style={{ '--cert-delay': '0s' }}>
-              <img src="images/Certificate_DA.png" alt="Certification 1" className="cert-img" />
+              <img src="/images/Certificate_DA.png" alt="Certification 1" className="cert-img" />
               <div className="cert-info">
                 <div className="cert-title">Introduction to Data Analytics</div>
                 <div className="cert-date">Received: Jan 2025</div>
@@ -224,7 +224,7 @@ function App() {
               </div>
             </div>
             <div className="cert-card" ref={certRefs[1]} style={{ '--cert-delay': '0.15s' }}>
-              <img src="images/Certificate_DAwSQL.png" alt="Certification 2" className="cert-img" />
+              <img src="/images/Certificate_DAwSQL.png" alt="Certification 2" className="cert-img" />
               <div className="cert-info">
                 <div className="cert-title">Data Analysis with Spreadsheets and SQL</div>
                 <div className="cert-date">Received: Feb 2025</div>
@@ -232,7 +232,7 @@ function App() {
               </div>
             </div>
             <div className="cert-card" ref={certRefs[2]} style={{ '--cert-delay': '0.3s' }}>
-              <img src="images/Certificate_Linux.png" alt="Certification 3" className="cert-img" />
+              <img src="/images/Certificate_Linux.png" alt="Certification 3" className="cert-img" />
               <div className="cert-info">
                 <div className="cert-title">Linux Essentials</div>
                 <div className="cert-date">Received: May 2025</div>
@@ -245,7 +245,7 @@ function App() {
           <h2 className="section-title">Projects</h2>
           <div className="projects-grid">
             <div className="project-card" ref={projectRefs[0]} style={{ '--project-delay': '0s' }}>
-              <img src="images/tpe_demo.png" alt="Project 1 Preview" className="project-preview" />
+              <img src="/images/tpe_demo.png" alt="Project 1 Preview" className="project-preview" />
               <div className="project-info">
                 <div className="project-title">Task Priority Estimator</div>
                 <div className="project-desc">A simple task organizer that uses random forest to determine the optimal order of which tasks to prioritize.</div>
@@ -253,7 +253,7 @@ function App() {
               </div>
             </div>
             <div className="project-card" ref={projectRefs[1]} style={{ '--project-delay': '0.2s' }}>
-              <img src="images/authentix_demo.png" alt="Project 2 Preview" className="project-preview" />
+              <img src="/images/authentix_demo.png" alt="Project 2 Preview" className="project-preview" />
               <div className="project-info">
                 <div className="project-title">AuthentiX</div>
                 <div className="project-desc">A Sentimet-Based Social Media Impersonation Detector with Sarcasm Analysis Using Machine Learning</div>
@@ -267,7 +267,7 @@ function App() {
           <h2 className="section-title">Poster Designs</h2>
           <div className="designs-grid">
             <div className="design-card" ref={designRefs[0]}>
-              <img src="images/poster1.png" alt="Basketball Poster 1" className="design-img" />
+              <img src="/images/poster1.png" alt="Basketball Poster 1" className="design-img" />
               <div className="design-info">
                 <div className="design-title">Zenless Zone Zero(Miyabi)</div>
                 <div className="design-desc">Promotional poster design concept. Poster focusing on a game character with the use of different overlays.</div>
@@ -275,7 +275,7 @@ function App() {
               </div>
             </div>
             <div className="design-card" ref={designRefs[1]}>
-              <img src="images/poster2.png" alt="Basketball Poster 2" className="design-img" />
+              <img src="/images/poster2.png" alt="Basketball Poster 2" className="design-img" />
               <div className="design-info">
                 <div className="design-title">McLaren P1 GTR</div>
                 <div className="design-desc">Sports car design concept. Poster using a car as the main subject to show its aggressive yet bold design.</div>
@@ -283,7 +283,7 @@ function App() {
               </div>
             </div>
             <div className="design-card" ref={designRefs[2]}>
-              <img src="images/poster3.png" alt="Basketball Poster 3" className="design-img" />
+              <img src="/images/poster3.png" alt="Basketball Poster 3" className="design-img" />
               <div className="design-info">
                 <div className="design-title">Kobe Bryant</div>
                 <div className="design-desc">Basketball Poster. Poster that uses the main subjects theme as the whole color pallete.</div>
@@ -303,23 +303,23 @@ function App() {
           <h2 className="section-title">Web Development Tools</h2>
           <div className="tools-grid">
             <div className="tool-card" ref={toolRefs[0]}>
-              <img src="images/js.svg" alt="JavaScript" className="tool-icon" />
+              <img src="/images/js.svg" alt="JavaScript" className="tool-icon" />
               <div className="tool-title">JavaScript</div>
             </div>
             <div className="tool-card" ref={toolRefs[1]}>
-              <img src="images\html5.svg" alt="HTML5" className="tool-icon" />
+              <img src="/images/html5.svg" alt="HTML5" className="tool-icon" />
               <div className="tool-title">HTML5</div>
             </div>
             <div className="tool-card" ref={toolRefs[2]}>
-              <img src="images/css3.svg" alt="CSS3" className="tool-icon" />
+              <img src="/images/css3.svg" alt="CSS3" className="tool-icon" />
               <div className="tool-title">CSS3</div>
             </div>
             <div className="tool-card" ref={toolRefs[3]}>
-              <img src="images/reactjs.svg" alt="React.js" className="tool-icon" />
+              <img src="/images/reactjs.svg" alt="React.js" className="tool-icon" />
               <div className="tool-title">React.js</div>
             </div>
             <div className="tool-card" ref={toolRefs[4]}>
-              <img src="images/vite.png" alt="Vite" className="tool-icon" />
+              <img src="/images/vite.png" alt="Vite" className="tool-icon" />
               <div className="tool-title">Vite</div>
             </div>
             <div className="tool-card" ref={toolRefs[5]}>
