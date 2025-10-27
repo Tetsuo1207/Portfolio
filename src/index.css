@@ -29,14 +29,12 @@ html, body {
   min-height: 100vh;
   overflow-x: hidden;
 
-  /* ✅ remove flex centering that broke the navbar */
   display: block;
 }
 
 
 /* ✅ optional: add spacing between navbar and content */
 main {
-  /* Remove top padding, centering handled in App.css */
   padding-top: 0;
 }
 

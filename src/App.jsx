@@ -3,8 +3,6 @@ import './App.css';
 
 // Simple carousel component used in the Web Designs section
 function Carousel() {
-  // Use real images when available. For missing webdesign screenshots we fall back to
-  // existing project images or an inline SVG 'WIP' placeholder so the site doesn't 404.
   const images = [
     '/images/tpe_demo.png',
     '/images/authentix_demo.png',
@@ -17,7 +15,7 @@ function Carousel() {
     if (paused) return undefined;
     const id = setInterval(() => {
       setIndex((i) => (i + 1) % images.length);
-    }, 5000); // 5 seconds
+    }, 5000);
     return () => clearInterval(id);
   }, [paused, images.length]);
 
@@ -61,7 +59,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [closing, setClosing] = useState(false);
 
-  // Handler to close burger menu and revert to original state
+  
   const handleCloseBurger = () => {
     setClosing(true);
     setTimeout(() => {
@@ -138,7 +136,6 @@ function App() {
         if (targetId === '#profile') {
           e.preventDefault();
           window.scrollTo({ top: 0, behavior: 'smooth' });
-          // Also close burger menu if open
           setMenuOpen(false);
         } else {
           const target = document.querySelector(targetId);

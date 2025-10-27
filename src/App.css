@@ -174,7 +174,7 @@
 }
 /* ===================== END NAVBAR HEADER STYLES ===================== */
 
-/* ===================== BURGER MENU STYLES ===================== */
+.burger {
 .burger {
   display: none;
   flex-direction: column;
@@ -276,7 +276,7 @@
   max-width: 900px;
   width: 100%;
   box-sizing: border-box;
-  position: relative;  /* now image will be positioned relative to the card */
+  position: relative;
   min-height: 350px;
 }
 
@@ -308,27 +308,25 @@
   flex: 1;
 }
 
-/* Image pinned to bottom of profile-card */
 .profile-img {
   position: absolute;
   bottom: 0;
-  right: 48px; /* aligns with card padding */
+  right: 48px;
   width: 280px;
   height: 320px;
   object-fit: cover;
   filter: drop-shadow(0 8px 32px rgba(0,0,0,0.45));
-  transition: opacity 0.5s ease; /* smooth fade */
+  transition: opacity 0.5s ease;
 }
 
 /* ------------------
-   Responsive rules
+  Responsive rules
 ------------------ */
 
-/* Fade out & hide image on tablets/phones */
 @media (max-width: 768px) {
   .profile-img {
     opacity: 0;
-    pointer-events: none; /* no ghost clicks */
+    pointer-events: none;
   }
 }
 
@@ -342,7 +340,7 @@
   }
 }
 
-/* ===================== MAIN CONTENT STYLES ===================== */
+.section-title {
 .main-content {
   display: flex;
   flex-direction: column;
@@ -371,7 +369,7 @@
 }
 
 
-/* ===================== CERTIFICATION CARD STYLES ===================== */
+.certifications-grid {
 .certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -390,8 +388,8 @@
   align-items: center;
   transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0), box-shadow 0.3s;
   border: 2px solid transparent;
-  opacity: 0; /* Hide initially */
-  animation: none; /* Remove animation by default */
+  opacity: 0;
+  animation: none;
 }
 .cert-card.in-view {
   opacity: 1;
@@ -521,8 +519,8 @@
   padding: 0;
   overflow: hidden;
   transition: box-shadow 0.2s, transform 0.2s;
-  opacity: 0; /* Hide initially */
-  animation: none; /* Remove animation by default */
+  opacity: 0;
+  animation: none;
 }
 .project-card.in-view {
   opacity: 1;
@@ -590,7 +588,7 @@
   }
 }
 
-/* ===================== DESIGNS SECTION ===================== */
+.designs-section {
 .designs-section {
   width: 100%;
   max-width: 1400px;
@@ -608,13 +606,13 @@
 }
 .design-card {
   background: #1a2233;
-  border-radius: 24px; /* larger rounded corners */
+  border-radius: 24px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.13);
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding: 0 0 20px 0;
-  overflow: hidden; /* clip image to rounded corners */
+  overflow: hidden;
   transition: box-shadow 0.2s, transform 0.2s;
   opacity: 0;
   animation: none;
@@ -625,12 +623,12 @@
 }
 .design-img {
   width: 100%;
-  max-height: 420px; /* limit very tall posters */
-  height: auto; /* let image keep aspect ratio */
-  object-fit: contain; /* show full image */
+  max-height: 420px;
+  height: auto;
+  object-fit: contain;
   background: #181818;
   display: block;
-  border-bottom-left-radius: 0; /* keep corners consistent */
+  border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
@@ -685,7 +683,7 @@
   transform: scale(0.98);
 }
 
-/* ===================== WEB DESIGNS SECTION ===================== */
+.webdesigns-section {
 .webdesigns-section {
   width: 100%;
   max-width: 1200px;
@@ -701,29 +699,27 @@
   align-items: center;
   margin-top: 32px;
 }
-/* Carousel styles for Web Designs */
 .webcarousel {
   width: 80%;
   max-width: 1000px;
   position: relative;
-  /* allow arrows to sit outside the image area while keeping slides clipped by the inner wrapper */
   overflow: visible;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.13);
-  background: transparent; /* make container background invisible */
+  background: transparent;
 }
 .webcarousel .slides {
   display: flex;
   width: 100%;
   transition: transform 0.6s cubic-bezier(0.22,0.9,0.32,1);
-  align-items: center; /* vertically center slides content */
+  align-items: center;
 }
 
 /* viewport that actually clips the slides so only the center one shows */
 .webcarousel .carousel-viewport {
   width: 100%;
-  overflow: hidden; /* hide off-screen slides */
-  border-radius: 18px; /* match outer container rounding */
+  overflow: hidden;
+  border-radius: 18px;
   box-sizing: border-box;
 }
 .webcarousel .slide {
@@ -731,20 +727,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 18px 0; /* remove horizontal padding so centering is exact */
+  padding: 18px 0;
   box-sizing: border-box;
 }
 .webcarousel .slide img {
-  /* Allow the image to keep its aspect ratio and not stretch to full width.
-     Use max-width so wide images stay within the slide, and width:auto so
-     centered flexbox alignment works consistently across aspect ratios. */
-  max-width: calc(100% - 36px); /* account for horizontal padding removed above */
+  max-width: calc(100% - 36px);
   width: auto;
   height: auto;
   max-height: 540px;
   object-fit: contain;
   display: block;
-  margin: 0 auto; /* ensure block-level centering */
+  margin: 0 auto;
   border-radius: 8px;
 }
 
@@ -754,8 +747,8 @@
   top: 50%;
   transform: translateY(-50%);
   padding: 6px 10px;
-  background: transparent; /* invisible background */
-  color: #fff; /* arrow color when idle */
+  background: transparent;
+  color: #fff;
   border: none;
   display: inline-flex;
   align-items: center;
@@ -776,7 +769,6 @@
   transform: translateY(-50%) scale(0.98);
 }
 
-/* entry animation when section becomes visible */
 .webdesigns-preview.in-view .webcarousel {
   animation: webCarouselEntry 0.7s cubic-bezier(0.22,0.9,0.32,1) both;
 }
