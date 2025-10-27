@@ -324,17 +324,9 @@ function App() {
               <img src="/images/vite.png" alt="Vite" className="tool-icon" />
               <div className="tool-title">Vite</div>
             </div>
-            <div className="tool-card" ref={toolRefs[5]}>
-              <img src="/tailwind-logo.png" alt="Tailwind CSS" className="tool-icon" />
-              <div className="tool-title">Tailwind CSS</div>
-            </div>
             <div className="tool-card" ref={toolRefs[6]}>
-              <img src="/github-logo.png" alt="GitHub" className="tool-icon" />
+              <img src="/images/github.svg" alt="GitHub" className="tool-icon" />
               <div className="tool-title">GitHub</div>
-            </div>
-            <div className="tool-card" ref={toolRefs[7]}>
-              <img src="/firebase-logo.png" alt="Firebase" className="tool-icon" />
-              <div className="tool-title">Firebase</div>
             </div>
           </div>
         </section>
