@@ -706,7 +706,8 @@
   width: 80%;
   max-width: 1000px;
   position: relative;
-  overflow: hidden;
+  /* allow arrows to sit outside the image area while keeping slides clipped by the inner wrapper */
+  overflow: visible;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.13);
   background: transparent; /* make container background invisible */
@@ -757,8 +758,8 @@
   line-height: 1;
   transition: color 0.14s ease, transform 0.08s ease;
 }
-.carousel-arrow.prev { left: 12px; }
-.carousel-arrow.next { right: 12px; }
+.carousel-arrow.prev { left: -48px; }
+.carousel-arrow.next { right: -48px; }
 .carousel-arrow:hover, .carousel-arrow:focus-visible {
   color: #ffe600;
   transform: translateY(-50%) scale(1.05);
