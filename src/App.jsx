@@ -3,11 +3,12 @@ import './App.css';
 
 // Simple carousel component used in the Web Designs section
 function Carousel() {
-  // Replace these image paths with your actual web design screenshots
+  // Use real images when available. For missing webdesign screenshots we fall back to
+  // existing project images or an inline SVG 'WIP' placeholder so the site doesn't 404.
   const images = [
-    '/webdesign1.jpg',
-    '/webdesign2.jpg',
-    '/webdesign3.jpg'
+    '/images/tpe_demo.png',
+    '/images/authentix_demo.png',
+    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect fill='%23222' width='100%25' height='100%25'/><text x='50%25' y='50%25' fill='%23ffffff' font-size='48' text-anchor='middle' dominant-baseline='middle'>WIP</text></svg>"
   ];
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -208,7 +209,7 @@ function App() {
               </p>
             </div>
             <div className="profile-image">
-              <img src="public/images/user.png" alt="Profile" className="profile-img dropshadow" />
+              <img src="/images/user.png" alt="Profile" className="profile-img dropshadow" />
             </div>
           </div>
         </section>
