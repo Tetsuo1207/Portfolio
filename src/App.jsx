@@ -208,7 +208,7 @@ function App() {
               </p>
             </div>
             <div className="profile-image">
-              <img src="/images/user.png" alt="Profile" className="profile-img dropshadow" />
+              <img src="public/images/user.png" alt="Profile" className="profile-img dropshadow" />
             </div>
           </div>
         </section>
