@@ -718,6 +718,14 @@
   transition: transform 0.6s cubic-bezier(0.22,0.9,0.32,1);
   align-items: center; /* vertically center slides content */
 }
+
+/* viewport that actually clips the slides so only the center one shows */
+.webcarousel .carousel-viewport {
+  width: 100%;
+  overflow: hidden; /* hide off-screen slides */
+  border-radius: 18px; /* match outer container rounding */
+  box-sizing: border-box;
+}
 .webcarousel .slide {
   min-width: 100%;
   display: flex;

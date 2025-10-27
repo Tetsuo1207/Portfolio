@@ -30,12 +30,16 @@ function Carousel() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="slides" style={{ transform: `translateX(-${index * 100}%)` }}>
-        {images.map((src, i) => (
-          <div className="slide" key={i}>
-            <img src={src} alt={`Web design ${i + 1}`} />
-          </div>
-        ))}
+      {/* Inner viewport clips slides so only the center slide is visible.
+          The outer .webcarousel keeps overflow visible so arrows can sit outside. */}
+      <div className="carousel-viewport">
+        <div className="slides" style={{ transform: `translateX(-${index * 100}%)` }}>
+          {images.map((src, i) => (
+            <div className="slide" key={i}>
+              <img src={src} alt={`Web design ${i + 1}`} />
+            </div>
+          ))}
+        </div>
       </div>
 
       <button className="carousel-arrow prev" onClick={prev} aria-label="Previous slide">‹</button>
