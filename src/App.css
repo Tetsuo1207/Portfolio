@@ -721,10 +721,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 18px; /* breathing room */
+  padding: 18px;
 }
 .webcarousel .slide img {
-  width: 100%;
+  /* Allow the image to keep its aspect ratio and not stretch to full width.
+     Use max-width so wide images stay within the slide, and width:auto so
+     centered flexbox alignment works consistently across aspect ratios. */
+  max-width: 100%;
+  width: auto;
   height: auto;
   max-height: 540px;
   object-fit: contain;
@@ -753,7 +757,7 @@
 .carousel-arrow.prev { left: 12px; }
 .carousel-arrow.next { right: 12px; }
 .carousel-arrow:hover, .carousel-arrow:focus-visible {
-  color: #ffe600; /* turn yellow on hover */
+  color: #ffe600;
   transform: translateY(-50%) scale(1.05);
 }
 .carousel-arrow:active {
@@ -1062,8 +1066,6 @@ button, .cert-view-btn, .project-test-btn, .design-view-btn, .settings-btn, .set
   box-shadow: none;
 }
 
-/* Remove the visible white/border focus ring when elements are clicked with mouse
-   but keep keyboard focus indicators via :focus-visible for accessibility. */
 button:focus:not(:focus-visible),
 button:active:not(:focus-visible),
 .burger:focus:not(:focus-visible),
