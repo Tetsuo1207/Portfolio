@@ -315,6 +315,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* add bottom padding to avoid overlap with the social icons */
+  padding-bottom: 88px;
 }
 
 .profile-text h1 {
@@ -370,6 +372,9 @@
   .profile-socials {
     left: 16px;
     bottom: 16px;
+  }
+  .profile-text {
+    padding-bottom: 56px;
   }
 }
 
