@@ -259,7 +259,7 @@ function App() {
           <h2 className="section-title">Projects</h2>
           <div className="projects-grid">
             <div className="project-card" ref={projectRefs[0]} style={{ '--project-delay': '0s' }}>
-              <img src="/images/tpe_demo.png" alt="Project 1 Preview" className="project-preview" />
+              <img src="/images/tpe.png" alt="Project 1 Preview" className="project-preview" />
               <div className="project-info">
                 <div className="project-title">Task Priority Estimator</div>
                 <div className="project-desc">A simple task organizer that uses random forest to determine the optimal order of which tasks to prioritize.</div>
