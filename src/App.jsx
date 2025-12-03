@@ -4,9 +4,9 @@ import './App.css';
 // Simple carousel component used in the Web Designs section
 function Carousel() {
   const images = [
-    '/images/tpe_demo.png',
+    '/images/tpe.png',
     '/images/authentix_demo.png',
-    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect fill='%23222' width='100%25' height='100%25'/><text x='50%25' y='50%25' fill='%23ffffff' font-size='48' text-anchor='middle' dominant-baseline='middle'>WIP</text></svg>"
+    '/images/nexxuslab_redesign.png'
   ];
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
