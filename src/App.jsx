@@ -336,9 +336,17 @@ function App() {
               <img src="/images/vite.png" alt="Vite" className="tool-icon" />
               <div className="tool-title">Vite</div>
             </div>
+            <div className="tool-card" ref={toolRefs[5]}>
+              <img src="/images/figma.svg" alt="Figma" className="tool-icon" />
+              <div className="tool-title">Figma</div>
+            </div>
             <div className="tool-card" ref={toolRefs[6]}>
               <img src="/images/github.svg" alt="GitHub" className="tool-icon" />
               <div className="tool-title">GitHub</div>
+            </div>
+            <div className="tool-card" ref={toolRefs[7]}>
+              <img src="/images/canva.svg" alt="Canva" className="tool-icon" />
+              <div className="tool-title">Canva</div>
             </div>
           </div>
         </section>
