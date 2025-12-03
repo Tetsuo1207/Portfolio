@@ -271,7 +271,7 @@ function App() {
               <div className="project-info">
                 <div className="project-title">AuthentiX</div>
                 <div className="project-desc">A Sentimet-Based Social Media Impersonation Detector with Sarcasm Analysis Using Machine Learning</div>
-                <a href="authentix-two.vercel.app" target="_blank" rel="noopener noreferrer" className="project-test-btn">Test Demo</a>
+                <a href="https://authentix-two.vercel.app" target="_blank" rel="noopener noreferrer" className="project-test-btn">Test Demo</a>
               </div>
             </div>
             
