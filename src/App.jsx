@@ -4,9 +4,9 @@ import './App.css';
 // Simple carousel component used in the Web Designs section
 function Carousel() {
   const images = [
-    '/images/tpe.png',
-    '/images/authentix_demo.png',
-    '/images/nexxuslab_redesign.png'
+    '/images/nlr.png',
+    '/images/figma_gci.png',
+    '/images/nlr.png'
   ];
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
