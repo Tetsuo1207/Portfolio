@@ -212,12 +212,12 @@ function App() {
             <div className="profile-image">
                 <img src="/images/user.png" alt="Profile" className="profile-img dropshadow" />
                 <div className="profile-socials" aria-hidden={false}>
-                  <a href="#" aria-label="Facebook" className="social-link" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/pescasio.gohan/" aria-label="Facebook" className="social-link" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                       <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.09 5.66 21.16 10.44 21.95v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.88h2.74l-.44 2.89h-2.3V21.95C18.34 21.16 22 17.09 22 12.07z"/>
                     </svg>
                   </a>
-                  <a href="#" aria-label="LinkedIn" className="social-link" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/gohan-pescasio/" aria-label="LinkedIn" className="social-link" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                       <path d="M20.45 20.45h-3.55v-5.47c0-1.3-.03-2.97-1.81-2.97-1.81 0-2.09 1.42-2.09 2.88v5.56H9.41V9h3.41v1.56h.05c.48-.91 1.66-1.87 3.42-1.87 3.66 0 4.34 2.41 4.34 5.54v6.73zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM6.61 20.45H4.07V9h2.54v11.45z"/>
                     </svg>
