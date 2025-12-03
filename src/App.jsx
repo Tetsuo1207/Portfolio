@@ -263,7 +263,7 @@ function App() {
               <div className="project-info">
                 <div className="project-title">Task Priority Estimator</div>
                 <div className="project-desc">A simple task organizer that uses random forest to determine the optimal order of which tasks to prioritize.</div>
-                <a href="https://youtu.be/_xsuqiTC9Oc" target="_blank" rel="noopener noreferrer" className="project-test-btn">Test Demo</a>
+                <a href="https://taskprioritizer-three.vercel.app" target="_blank" rel="noopener noreferrer" className="project-test-btn">Test Demo</a>
               </div>
             </div>
             <div className="project-card" ref={projectRefs[1]} style={{ '--project-delay': '0.2s' }}>
