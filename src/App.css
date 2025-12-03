@@ -279,6 +279,35 @@
   min-height: 350px;
 }
 
+/* Social icons inside profile card (bottom-left) */
+.profile-socials {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  display: flex;
+  gap: 12px;
+  z-index: 5;
+}
+.profile-socials .social-link {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #18181c;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: background 0.18s ease, color 0.12s ease, transform 0.08s ease;
+}
+.profile-socials .social-link:hover,
+.profile-socials .social-link:focus-visible {
+  background: #ffe600;
+  color: #18181c;
+  transform: translateY(-2px);
+}
+
 .profile-text {
   flex: 2;
   color: #fff;
