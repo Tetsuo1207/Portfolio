@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
 
-// Simple carousel component used in the Web Designs section
+
 function Carousel() {
   const images = [
-    '/images/nlr.png',
-    '/images/figma_gci.png',
-    '/images/nlr.png'
+    { src: '/images/nlr.png', url: 'https://www.figma.com/proto/IM2M1WknsMrw3RsNRFD8qY/Nexxus-Lab?node-id=372-626&p=f&t=doRkXGl5NYVq5IW9-1&scaling=min-zoom&content-scaling=fixed&page-id=179%3A67&starting-point-node-id=372%3A626' },
+    { src: '/images/figma_gci.png', url: 'https://www.figma.com/proto/wO4Jg1jPOANEUVCTT0QbaB/Global-Content-AI?node-id=138-2406&t=WJ6ycBg5OzrYzf2C-1&starting-point-node-id=138%3A2406' },
+    { src: '/images/nlr.png', url: 'https://www.figma.com/proto/IM2M1WknsMrw3RsNRFD8qY/Nexxus-Lab?node-id=372-626&p=f&t=doRkXGl5NYVq5IW9-1&scaling=min-zoom&content-scaling=fixed&page-id=179%3A67&starting-point-node-id=372%3A626' }
   ];
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -32,9 +32,15 @@ function Carousel() {
           The outer .webcarousel keeps overflow visible so arrows can sit outside. */}
       <div className="carousel-viewport">
         <div className="slides" style={{ transform: `translateX(-${index * 100}%)` }}>
-          {images.map((src, i) => (
+          {images.map(({ src, url }, i) => (
             <div className="slide" key={i}>
-              <img src={src} alt={`Web design ${i + 1}`} />
+              {url ? (
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  <img src={src} alt={`Web design ${i + 1}`} />
+                </a>
+              ) : (
+                <img src={src} alt={`Web design ${i + 1}`} />
+              )}
             </div>
           ))}
         </div>
